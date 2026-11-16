@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>星际射击</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="game-shell">
+      <div class="hud">
+        <div class="hud-item"><span>分数</span><strong id="score">0</strong></div>
+        <div class="hud-item"><span>最高</span><strong id="bestScore">0</strong></div>
+        <div class="hud-item"><span>生命</span><strong id="lives">5</strong></div>
+      </div>
+
+      <canvas id="gameCanvas" width="960" height="600" aria-label="星际射击��戏"></canvas>
+
+      <div class="overlay" id="overlay">
+        <div class="panel">
+          <h1>星际射击</h1>
+          <p id="overlayText">按空格开始</p>
+          <button id="startButton">开始游戏</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
